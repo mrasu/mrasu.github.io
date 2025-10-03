@@ -109,35 +109,58 @@
 }
 
 .experience-header {
-  display: inline;
+  display: block;
   color: inherit;
+
+  @media only screen and (min-width: $cut) {
+    display: inline;
+  }
 }
 
 .experience-year {
+  display: block;
   font-weight: 500;
   font-size: 0.95em;
   color: $main;
   letter-spacing: 0.01em;
-  margin-right: 0.4em;
+  margin: 0 0 0.35em;
+
+  @media only screen and (min-width: $cut) {
+    display: inline;
+    margin: 0 0.4em 0 0;
+  }
 }
 
 .experience-meta {
-  display: inline;
+  display: block;
+
+  @media only screen and (min-width: $cut) {
+    display: inline;
+  }
 }
 
 .experience-company {
-  display: inline;
+  display: block;
   font-weight: 600;
   color: $main;
-  margin-right: 0.35em;
+  margin: 0;
+
+  @media only screen and (min-width: $cut) {
+    display: inline;
+    margin: 0 0.35em 0 0;
+  }
 }
 
 .experience-title {
-  display: inline;
+  display: block;
   color: $sec;
   font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.01em;
+
+  @media only screen and (min-width: $cut) {
+    display: inline;
+  }
 }
 
 .experience-body {
