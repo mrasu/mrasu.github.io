@@ -1,0 +1,152 @@
+#about {
+  font-size: 120%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.about-me {
+  margin: 0 auto 48px;
+}
+
+.about-me__icon {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($main, 0.08);
+  border: 4px solid rgba($main, 0.06);
+  box-shadow: 0 16px 32px rgba($main, 0.18);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
+.writing {
+  margin: 0 auto 48px;
+}
+
+.writing-title {
+  margin: 0 0 0.6em;
+  font-size: 2.5rem;
+}
+
+.writing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba($main, 0.12);
+}
+
+.writing-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba($main, 0.12);
+}
+
+.writing-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $main;
+  text-decoration: none;
+  margin-right: 0.5em;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.writing-url {
+  display: block;
+  font-size: 0.95rem;
+  color: $sec;
+  word-break: break-all;
+
+  a {
+    display: inline-block;
+    color: $sec;
+    text-decoration: none;
+    margin-right: .5em;
+  }
+}
+
+.writing-note {
+  margin: 0.4em 0 0;
+  color: $sec;
+  line-height: 1.6;
+}
+
+.experience {
+  margin: 0 auto;
+}
+
+.experience-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.4rem;
+  border-top: 0;
+}
+
+.experience-item {
+  padding: 0.4em 0 0;
+  border-bottom: 0;
+  color: $sec;
+  line-height: 1.6;
+}
+
+.experience-header {
+  display: inline;
+  color: inherit;
+}
+
+.experience-year {
+  font-weight: 500;
+  font-size: 0.95em;
+  color: $main;
+  letter-spacing: 0.01em;
+  margin-right: 0.4em;
+}
+
+.experience-meta {
+  display: inline;
+}
+
+.experience-company {
+  display: inline;
+  font-weight: 600;
+  color: $main;
+  margin-right: 0.35em;
+}
+
+.experience-title {
+  display: inline;
+  color: $sec;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.experience-body {
+  display: block;
+  margin: 0.25em 0 0 0;
+
+  p {
+    display: block;
+    margin: 0;
+    color: inherit;
+  }
+}
